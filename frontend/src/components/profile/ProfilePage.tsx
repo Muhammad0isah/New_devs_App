@@ -8,7 +8,7 @@ import { toast } from 'react-hot-toast';
 import { profileService } from '../../services/profileService';
 import { ProfileResponse, ProfileUpdateRequest, PreferencesUpdateRequest } from '../../types/profile';
 import AvatarUpload from './AvatarUpload';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../../contexts/AuthContext.new';
 
 const ProfilePage: React.FC = () => {
   const { user, loading: authLoading } = useAuth();
